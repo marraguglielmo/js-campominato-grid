@@ -7,3 +7,68 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+img{
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 20px 20px;
+}
+
+main{
+    background-color: #7FFFD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+}
+
+button{
+    width: 50px;
+    padding: 5px 10px;
+}
+
+select{
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    aspect-ratio: 1;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.box.clicked{
+    background-color:brown;
+}
