@@ -3,7 +3,6 @@ const gridContainer = document.querySelector('.container');
 const btn = document.querySelector('button');
 const startTxt = document.querySelector('.start-txt');
 const cellSelectedTxt = document.querySelector('.cell-selected');
-const difficult = document.getElementById('difficult').value;
 const hard = 100;
 const normal = 81;
 const easy = 49;
@@ -20,6 +19,7 @@ function start(){
     
     reset();
     
+    const difficult = document.getElementById('difficult').value;
     if(difficult === 'hard'){
         numCell = hard;
     }else if(difficult === 'normal'){
