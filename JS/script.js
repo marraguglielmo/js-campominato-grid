@@ -5,18 +5,21 @@ reset();
 
 
 for(let i = 1; i <= 100; i++){
-    const square = getBox();
+    const square = getBox(i);
     gridContainer.append(square)
 }
 
 
 // FUNCTIONS ///////////
 
-function getBox(){
+function getBox(numero){
     const sq = document.createElement('div');
     sq.className = 'box';
+    sq.innerHTML = numero;
 
-
+    sq.addEventListener('click', function(){
+        sq.classList.toggle('clicked');
+    })
     
     return sq;
 }
