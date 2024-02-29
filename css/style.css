@@ -86,10 +86,23 @@ select{
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    width: 50px;
-    height: 50px;
     border: 1.5px solid black;
     cursor: pointer;
+}
+
+.box.hard{
+    width: 50px;
+    height: 50px;
+}
+
+.box.normal{
+    width: 55.5px;
+    height: 55.5px;
+}
+
+.box.easy{
+    width: 71.4px;
+    height: 71.4px;
 }
 
 .box.clicked{

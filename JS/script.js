@@ -31,6 +31,14 @@ function start(){
     for(let i = 1; i <= numCell; i++){
         const square = getBox(i);
         gridContainer.append(square);
+
+        if(numCell === hard){
+            square.classList.add('hard');
+        }else if(numCell === normal){
+            square.classList.add('normal');
+        }else{
+            square.classList.add('easy');
+        }
     }
 }
 
