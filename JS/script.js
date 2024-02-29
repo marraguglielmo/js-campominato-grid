@@ -1,16 +1,23 @@
 const gridContainer = document.querySelector('.container');
 const btn = document.querySelector('button');
+const startTxt = document.querySelector('.start-txt');
 
-reset();
-
-
-for(let i = 1; i <= 100; i++){
-    const square = getBox(i);
-    gridContainer.append(square)
-}
+btn.addEventListener('click', start);
 
 
 // FUNCTIONS ///////////
+
+function start(){
+    startTxt.classList.add('hide');
+    gridContainer.classList.remove('hide');
+
+    reset();
+
+    for(let i = 1; i <= 100; i++){
+        const square = getBox(i);
+        gridContainer.append(square);
+    }
+}
 
 function getBox(numero){
     const sq = document.createElement('div');

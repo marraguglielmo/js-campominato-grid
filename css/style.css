@@ -23,7 +23,7 @@ header{
 }
 
 main{
-    background-color: #7FFFD4;
+    background-color: #6ED663;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,14 +40,30 @@ footer{
 }
 
 button{
-    width: 50px;
-    padding: 5px 10px;
+    background-color:#021732;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: border-radius .1s ,box-shadow .2s;
+}
+
+button:hover{
+    border-radius: 30px;
+    box-shadow: 0px 5px 17px 0px rgb(153, 153, 153);
 }
 
 select{
+    background-color: transparent;
+    border: 1.5px solid #021732;
+    border-radius: 5px;
     width: 100px;
     padding: 5px 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .logo{
@@ -69,10 +85,20 @@ select{
     align-items: center;
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    border: 1.5px solid black;
     cursor: pointer;
 }
 
 .box.clicked{
-    background-color:brown;
+    background-color: #021732;
+    color: white;
+}
+
+.start-txt{
+    width: fit-content;
+    font-size: 4em;
+}
+
+.hide{
+    display: none;
 }
