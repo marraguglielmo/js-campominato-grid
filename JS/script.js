@@ -19,6 +19,7 @@ function getBox(numero){
 
     sq.addEventListener('click', function(){
         sq.classList.toggle('clicked');
+        console.log(this.innerHTML);
     })
     
     return sq;
