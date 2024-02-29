@@ -1,8 +1,13 @@
+// elements
 const gridContainer = document.querySelector('.container');
 const btn = document.querySelector('button');
 const startTxt = document.querySelector('.start-txt');
 const cellSelectedTxt = document.querySelector('.cell-selected');
-
+const difficult = document.getElementById('difficult').value;
+const hard = 100;
+const normal = 81;
+const easy = 49;
+let numCell;
 btn.addEventListener('click', start);
 
 
@@ -12,10 +17,18 @@ function start(){
     startTxt.classList.add('hide');
     gridContainer.classList.remove('hide');
     cellSelectedTxt.classList.remove('hide');
-
+    
     reset();
-
-    for(let i = 1; i <= 100; i++){
+    
+    if(difficult === 'hard'){
+        numCell = hard;
+    }else if(difficult === 'normal'){
+        numCell = normal;
+    }else{
+        numCell = easy;
+    }
+    
+    for(let i = 1; i <= numCell; i++){
         const square = getBox(i);
         gridContainer.append(square);
     }
