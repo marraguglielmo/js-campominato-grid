@@ -6,7 +6,7 @@ reset();
 
 for(let i = 1; i <= 100; i++){
     const square = getBox();
-    console.log(square);
+    gridContainer.append(square)
 }
 
 
@@ -16,6 +16,8 @@ function getBox(){
     const sq = document.createElement('div');
     sq.className = 'box';
 
+
+    
     return sq;
 }
 
