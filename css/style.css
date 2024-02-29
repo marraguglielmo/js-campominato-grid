@@ -23,6 +23,7 @@ header{
 }
 
 main{
+    position: relative;
     background-color: #6ED663;
     display: flex;
     justify-content: center;
@@ -97,6 +98,12 @@ select{
 .start-txt{
     width: fit-content;
     font-size: 4em;
+}
+
+.cell-selected{
+    position: absolute;
+    left: 40px;
+    font-size: 1.4rem;
 }
 
 .hide{
